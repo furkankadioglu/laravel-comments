@@ -37,7 +37,7 @@ trait HasComments
      * @param string $comment
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function commentAsUser(?Model $user, string $comment)
+    public function commentAsUser(Model $user, string $comment)
     {
         $commentClass = config('comments.comment_class');
 
